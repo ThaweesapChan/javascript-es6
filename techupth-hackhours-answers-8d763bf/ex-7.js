@@ -1,3 +1,4 @@
+//ex-7
 const employee1 = {
   name: "John",
   age: 20,
@@ -13,5 +14,7 @@ const employee2 = {
   },
 };
 
-const result2 = employee2.scores?.english ?? "English score is not defined"; // ใช้ Nullish Coalescing
-console.log(result2); // English score is not defined
+const result2 = employee2.scores?.english ?? "English score is not defined";
+
+console.log(result1);
+console.log(result2);

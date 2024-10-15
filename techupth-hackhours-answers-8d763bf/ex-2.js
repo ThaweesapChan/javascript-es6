@@ -1,3 +1,4 @@
+//ex-2
 let studentProfile = {
   name: "John",
   age: 20,
@@ -13,12 +14,8 @@ let studentScores = {
 };
 
 // Start coding here
-let newStudentProfile = {
-  ...studentProfile,
-  scores: {
-    ...studentProfile.scores,
-    ...studentScores,
-  },
-};
+let newStudentProfile = { ...studentProfile };
+newStudentProfile.scores = { ...newStudentProfile.scores, ...studentScores };
 
+// newStudentProfile.scores = { ...studentScores };
 console.log(newStudentProfile);
